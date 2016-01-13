@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">HeartTestDemo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--modify by wangxiaobin start-->
+    <string name="menu_start">start testing</string>
+    <string name="menu_setting">settings</string>
+    <string name="menu_list_show">list show data</string>
+    <string name="head_title">HeartTest</string>
+    <string name="head_author">xiaobin.wang@feixun.com.cn</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="start_fragment">start fragment</string>
+    <string name="setting_fragment">setting fragment</string>
+    <!--modify by wangxiaobin end-->
+
+    <string name="start_title">current configuration parameters</string>
+    <string name="record_time_pre">record count：</string>
+    <string name="record_time_end">time</string>
+
+    <string name="setting_interval_time">setting time interval</string>
+    <string name="setting_count">setting record count</string>
+    <string name="please_setting">please setting</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="default_interval">60000</string>
+    <string name="default_count">5</string>
+
+    <string name="test_result">Test Result</string>
+    <string name="test_time">Test Time</string>
+    <string name="test_local_power">Local Power</string>
+    <string name="serial_number">Serial</string>
+
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="successful">successful</string>
+    <string name="clear_data">clear data</string>
+
+    <string name="day">day</string>
+    <string name="month">month</string>
+    <string name="the">the</string>
+
+</resources>
