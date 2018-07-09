@@ -1,10 +1,11 @@
-package com.xiaobin.create.hearttestdemo;
+package com.chenfengweiqing.create;
 
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
-import com.xiaobin.create.hearttestdemo.util.Util;
+
+import com.chenfengweiqing.create.utils.Util;
 
 /**
  * Created by jack on 2015/11/10.

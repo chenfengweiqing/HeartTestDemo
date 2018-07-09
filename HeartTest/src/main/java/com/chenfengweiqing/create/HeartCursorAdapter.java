@@ -1,4 +1,4 @@
-package com.xiaobin.create.hearttestdemo;
+package com.chenfengweiqing.create;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
 
-import com.xiaobin.create.hearttestdemo.db.HeartSQLiteOpenHelper;
+import com.chenfengweiqing.create.db.HeartSQLiteOpenHelper;
 
 /**
  * Created by LCZ on 2015-11-11.

@@ -1,8 +1,8 @@
-package com.xiaobin.create.hearttestdemo.util;
+package com.chenfengweiqing.create.utils;
 
 import android.content.Context;
 
-import com.xiaobin.create.hearttestdemo.R;
+import com.chenfengweiqing.create.R;
 
 /**
  * Created by LCZ on 2015-11-10.

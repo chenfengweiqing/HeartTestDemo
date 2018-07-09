@@ -1,4 +1,4 @@
-package com.xiaobin.create.hearttestdemo;
+package com.chenfengweiqing.create;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -11,8 +11,10 @@ import android.net.Uri;
 import android.os.BatteryManager;
 import android.os.IBinder;
 import android.util.Log;
-import com.xiaobin.create.hearttestdemo.db.HeartSQLiteOpenHelper;
-import com.xiaobin.create.hearttestdemo.util.Util;
+
+import com.chenfengweiqing.create.db.HeartSQLiteOpenHelper;
+import com.chenfengweiqing.create.utils.Util;
+
 import java.text.SimpleDateFormat;
 
 

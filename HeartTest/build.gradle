@@ -5,7 +5,7 @@ android {
     buildToolsVersion "26.0.1"
 
     defaultConfig {
-        applicationId "com.xiaobin.create.hearttestdemo"
+        applicationId "com.chenfengweiqing.create"
         minSdkVersion 26
         targetSdkVersion 26
         versionCode 1

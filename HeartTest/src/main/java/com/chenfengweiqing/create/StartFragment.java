@@ -1,4 +1,4 @@
-package com.xiaobin.create.hearttestdemo;
+package com.chenfengweiqing.create;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.app.PendingIntent;
@@ -17,8 +17,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import com.xiaobin.create.hearttestdemo.util.Util;
 
+import com.chenfengweiqing.create.utils.Util;
 
 /**
  * A simple {@link Fragment} subclass.

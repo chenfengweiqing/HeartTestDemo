@@ -1,4 +1,4 @@
-package com.xiaobin.create.hearttestdemo.db;
+package com.chenfengweiqing.create.db;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -17,9 +17,11 @@ public class HeartContentProvider extends ContentProvider {
     public static final String HEART_TEST = "heartContentProvider";
     private static final int HEART_ALL = 1;
     private static final UriMatcher sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
+
     static {
         sUriMatcher.addURI(HEART_TEST, "heart", HEART_ALL);
     }
+
     @Override
     public boolean onCreate() {
         mOpenHelper = HeartSQLiteOpenHelper.getInstance(getContext());
@@ -31,14 +33,14 @@ public class HeartContentProvider extends ContentProvider {
         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
         SQLiteDatabase db = mOpenHelper.getReadableDatabase();
         int match = sUriMatcher.match(uri);
-        switch(match){
+        switch (match) {
             case HEART_ALL:
                 qb.setTables(HeartSQLiteOpenHelper.TABLE_HEART);
                 break;
             default:
                 throw new UnsupportedOperationException("URI" + uri + "not support");
         }
-        Cursor cursor = qb.query(db,projection,selection,selectionArgs,null,null,sortOrder);
+        Cursor cursor = qb.query(db, projection, selection, selectionArgs, null, null, sortOrder);
         return cursor;
     }
 
@@ -51,14 +53,14 @@ public class HeartContentProvider extends ContentProvider {
     public Uri insert(Uri uri, ContentValues values) {
         int match = sUriMatcher.match(uri);
         SQLiteDatabase db = mOpenHelper.getReadableDatabase();
-        switch(match){
+        switch (match) {
             case HEART_ALL:
-                db.insert(HeartSQLiteOpenHelper.TABLE_HEART, HeartSQLiteOpenHelper.InterHeart._ID,values);
+                db.insert(HeartSQLiteOpenHelper.TABLE_HEART, HeartSQLiteOpenHelper.InterHeart._ID, values);
                 break;
             default:
                 throw new UnsupportedOperationException("URI" + uri + "not support");
         }
-        getContext().getContentResolver().notifyChange(uri,null);
+        getContext().getContentResolver().notifyChange(uri, null);
         return uri;
     }
 
@@ -66,7 +68,7 @@ public class HeartContentProvider extends ContentProvider {
     public int delete(Uri uri, String selection, String[] selectionArgs) {
         int match = sUriMatcher.match(uri);
         SQLiteDatabase db = mOpenHelper.getReadableDatabase();
-        switch(match){
+        switch (match) {
             case HEART_ALL:
                 break;
             default:
@@ -80,13 +82,13 @@ public class HeartContentProvider extends ContentProvider {
     public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
         int match = sUriMatcher.match(uri);
         SQLiteDatabase db = mOpenHelper.getReadableDatabase();
-        switch(match){
+        switch (match) {
             case HEART_ALL:
                 break;
             default:
                 throw new UnsupportedOperationException("URI" + uri + "not support");
         }
-        int count = db.update(HeartSQLiteOpenHelper.TABLE_HEART,values,selection,selectionArgs);
+        int count = db.update(HeartSQLiteOpenHelper.TABLE_HEART, values, selection, selectionArgs);
         return count;
     }
 }
