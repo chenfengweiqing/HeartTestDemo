@@ -69,7 +69,7 @@ public class StartFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        pre = getActivity().getSharedPreferences(Util.PREFERENCE_NAME, Context.MODE_WORLD_READABLE);
+        pre = getActivity().getSharedPreferences(Util.PREFERENCE_NAME, Context.MODE_PRIVATE);
         editor = pre.edit();
 
         mTimeInterval = Util.getTimeIntervalEntry(getActivity(), pre.getString(Util.PRE_TIME_INTERVAL_KEY, getResources().getString(R.string.default_interval))) ;
